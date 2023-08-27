@@ -84,8 +84,8 @@
 .socialGroup {
     & .socialIcon {
         border: 2px solid $theme2;
-        width: 38px;
-        height: 38px;
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -108,8 +108,8 @@
 @include media-breakpoint-down(xl) {
     .socialGroup {
         & .socialIcon {
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
         }
     }
 }

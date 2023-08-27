@@ -6,6 +6,12 @@
         font-size: 35px;
         line-height: 100%;
     }
+    &.experiences {
+        font-family: 'LMRoman';
+        & span{
+                font-family: 'Geometria';
+        }
+    }
 }
 
 

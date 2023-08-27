@@ -20,7 +20,7 @@
     }
     &.borderdBtn {
         position: relative;
-        color: $white !important;
+        color: $white;
         z-index: 1;
         overflow: hidden;
         &::after, &::before{
@@ -36,7 +36,7 @@
             border: 2px solid $theme2;
         }
         &::before{
-            width: 80%;
+            width: 82%;
             background-color: $theme2;
             z-index: -1;
             transition: all ease-in-out 0.3s;
@@ -50,6 +50,31 @@
                     filter: brightness(10);
                 }
             }
+        }
+        &.borderwhiteBtn {
+            color: $theme1 ;
+        &:after{
+            border: 2px solid $white;
+        }
+        &::before{
+            width: 79.5%;
+            background-color: $white;
+        }
+        & span {
+            & img {
+                filter: brightness(10);
+            }
+        }
+        &:hover{
+            &::before{
+                width: 100%;
+            }
+            & span {
+                & img {
+                    filter: unset;
+                }
+            }
+        }
         }
     }
 }
