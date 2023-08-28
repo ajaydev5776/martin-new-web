@@ -1,0 +1,67 @@
+@include media-breakpoint(basic) {
+    .wellnessection {
+        font-family: 'Geometria';
+        & .getheading {
+            font-size: 30px;
+        }
+        & .subheading {
+            font-size: 22px;
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .wellnessection {
+        & .getheading {
+            font-size: 28px;
+        }
+        & .subheading {
+            font-size: 20px;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .wellnessection {
+        & .getheading {
+            font-size: 25px;
+        }
+        & .subheading {
+            font-size: 18px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .wellnessection {
+        & .getheading {
+            font-size: 22px;
+        }
+        & .subheading {
+            font-size: 16px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .wellnessection {
+        & .getheading {
+            font-size: 20px;
+        }
+        & .subheading {
+            font-size: 14px;
+        }
+    }
+}

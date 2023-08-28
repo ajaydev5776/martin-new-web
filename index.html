@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
     <!-- *Required meta tags* -->
     <meta name="title" content="Title here" />
     <meta name="discrption" content="Discrption here" />
@@ -16,9 +16,9 @@
 <body>
 
     <!-- * Navbar Start -->
-    <nav class="navbar navbar-expand bg-body-tertiary">
+    <nav class="navbar navbar-expand fixed-top bg-body-tertiary">
         <div class="container-fluid px-lg-4">
-            <button class="shadow-none border-0 rounded-circle toggleBtn d-flex flex-column gap-1 overflow-hidden align-items-center justify-content-center">
+            <button class="shadow-none border-0 rounded-circle toggleBtn d-flex flex-column gap-1 overflow-hidden align-items-center justify-content-center" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -46,7 +46,7 @@
 
 
     <!-- * Tastemakers Start -->
-    <div class="container-fluid py-5 tastemakerssection">
+    <div class="container-fluid py-5 mt-5 tastemakerssection">
         <div class="container innersection">
             <div class="row">
                 <div class="col-lg-6 col-12 ms-auto">
@@ -235,8 +235,59 @@
 
         </div> -->
     </div>
-    <!-- ! Nav Toggle Modal End -->
 
+    <!-- ! Nav Toggle Offcanvas start -->
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+        Toggle static offcanvas
+        </button> -->
+        
+    <div class="offcanvas menuoffcanvas offcanvas-start bg-transparent border-0" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="rounded-3 m-3 innerbodyPart h-100 overflow-hidden">
+            <div class="row flex-column flex-nowrap  h-100">
+                <div class="col-12">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title d-flex" id="staticBackdropLabel"><span class="logo d-inline-flex"><img src="assets/img/logo.svg" class="h-100" alt="logo"></span></h5>
+                        <button type="button" class="closeBtn rounded-circle shadow-none bg-transparent d-inline-flex align-items-center justify-content-center p-2" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/img/close.svg" class="w-100" alt="close"></button>
+                    </div>
+                </div>
+                <div class="col-12 h-100 flex-fill overflow-y-auto">
+                    <div class="offcanvas-body menubody ">
+                        <div class="row row-gap-2">
+                            <div class="col-12"><div class="tabheading text-white">Hotel at a Glance</div></div>
+                            <div class="col-12">
+                                <ul class="list-unstyled navs d-flex flex-column gap-2">
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12"><div class="tabheading text-white">Hotel at a Glance</div></div>
+                            <div class="col-12">
+                                <ul class="list-unstyled navs d-flex flex-column gap-2">
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                    <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12"><a href="javascript:;" class="text-decoration-none bg-white ms-md-3 ms-auto d-inline-flex align-items-center gap-2 conceptBtn borderdBtn py-lg-2 py-1 px-3 rounded-pill">Anfrage stellen <span class="d-inline-flex"><img src="assets/img/arrow.svg" class="w-100" alt="arrow"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! Nav Toggle Offcanvas End -->
+
+    <div class="sideIcon position-fixed start-0 bottom-0 px-4">
+        <ul class="list-unstyled d-flex flex-column gap-5">
+            <li><a href="javascript:;" class="text-decoration-none text-white links"><span class="d-inline-flex p-2 rounded-circle overflow-hidden"><img src="assets/img/mail.svg" alt="" class="w-100"></span></a></li>
+            <li><a href="javascript:;" class="text-decoration-none text-white links"><span class="d-inline-flex p-2 rounded-circle overflow-hidden"><img src="assets/img/down-arrow.svg" alt="" class="w-100"></span></a></li>
+        </ul>
+    </div>
     
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
