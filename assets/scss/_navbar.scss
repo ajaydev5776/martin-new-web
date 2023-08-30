@@ -89,6 +89,7 @@
     }
     &.footericon {
         & .socialIcon {
+            
             & img {
                 filter: brightness(10);
                 transition: all ease-in-out 0.3s;
@@ -101,10 +102,15 @@
         }
     }
 }
+.offcanvas-backdrop.fade.show{
+display: none;
+}
 
 .menuoffcanvas {
     & .innerbodyPart {
-        background-color: rgba($white , 0.7);
+        // background-color: rgba($white , 0.7);
+        background-color: rgba($gray-500 , 0.2);
+        backdrop-filter: blur(50px);
         & .offcanvas-header {
             border-bottom: 1px solid rgba($white , 0.7);
             & .offcanvas-title {

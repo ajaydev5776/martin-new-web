@@ -1,3 +1,127 @@
+// * partysection Start
+.partysection {
+    & .innerfluid {
+        background-color: lighten($theme2, 30);
+        & .partyname {
+            font-size: 22px;
+            font-family: 'Geometria';
+        }
+        & .card{
+            & .card-body{
+                & .partylogo {
+                    height: 48px;
+                    & img {
+                        object-fit: contain;
+                    }
+                }
+            }
+            &::before{
+                content: '';
+                height: calc(100% + 150px);
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                border: 15px solid lighten($theme1, 40);
+            }
+        }
+    }
+}
+// * partysection End
+
+
+.contactSection {
+    & .contactCard {
+        background-color: $theme1;
+        // background-color: red;
+        & .contactContent {
+            // padding: 50px 30px;
+            & .formData {
+                gap:40px;
+                & .ContactInput {
+                    font-size: 16px;
+                    // color: $;
+                    // padding-bottom:;
+                    border: none;
+                    border-bottom:1px solid lighten($theme2, 5);
+                    outline: none;
+                    &::placeholder {
+                        font-size: 16px;
+                        color: $white;
+                    }
+                    // & .star {
+                    //     color: $red;
+                    // }
+                }
+                & .textBox {
+                    // width: 45%;
+                    max-height: 170px;
+                    // resize: both;
+                }
+                & .checkInput {
+                        height: 18px;
+                        background: transparent;
+                        min-width: 18px;
+                        max-width: 18px;
+                        border: 1.5px solid lighten($theme1, 30);
+                        transition: all 0.3s ease-in-out;
+                        outline: none;
+                    &:checked {
+                        background-color: $theme1;
+                        background-image: none;
+                        &::before {
+                            transform: translate(-25%, -55%) scale(1.2);
+                        }
+                    }
+                    // &::after {
+                    //     height: 20px;
+                    //     width: 20px;
+                    //     content: '';
+                    //     position: absolute;
+                    //     top: 0;
+                    //     z-index: 1;
+                    //     left: 0;
+                    //     border: 1.5px solid lighten($theme1, 15);
+                    //     transition: all 0.3s ease-in-out;
+                    // }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) scale(0);
+                        background:url(../img/checktwo.svg) no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        height: 60%;
+                        width: 100%;
+                        z-index: 5;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                & .checkBtn {
+                    // padding-left: 20px;
+                    cursor: pointer;
+                }
+                & .scrollcontent {
+                    font-size: 14px;
+                    padding: 10px;
+                    height: 150px;
+                }
+                & .sendBtn {
+                    font-size: 14px;
+                    padding:0 12px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
 @include media-breakpoint(basic) {
     .wellnessection {
         font-family: 'Geometria';
@@ -31,6 +155,28 @@
             font-size: 20px;
         }
     }
+        // * partysection Start
+        .partysection {
+            & .innerfluid {
+                & .partyname {
+                    font-size: 20px;
+                }
+                & .card{
+                    & .card-body{
+                        & .partylogo {
+                            height: 35px;
+                            & img {
+                            }
+                        }
+                    }
+                    &::before{
+                        content: '';
+                        height: calc(100% + 120px);
+                    }
+                }
+            }
+        }
+        // * partysection End
 }
 
 @include media-breakpoint-down(lg) {
@@ -40,6 +186,67 @@
         }
         & .subheading {
             font-size: 18px;
+        }
+    }
+    // * partysection Start
+    .partysection {
+        & .innerfluid {
+            & .partyname {
+                font-size: 18px;
+            }
+            & .card{
+                margin-bottom: -5%;
+                & .card-body{
+                    & .partylogo {
+                        height: 25px;
+                        & img {
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    border-width: 10px;
+                    height: calc(100% + 0px);
+                }
+            }
+        }
+    }
+    // * partysection End
+
+    .contactSection {
+        & .contactCard {
+            background-color: $theme1;
+            // background-color: red;
+            & .contactContent {
+                // padding: 50px 30px;
+                gap: 30px;
+                & .formData {
+                    gap:30px;
+                    & .InputInner {
+                        gap: 30px;
+                    }
+                    & .ContactInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .textBox {
+                    }
+                    & .checkInput {
+                        &:checked {
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                    & .checkBtn {
+                    }
+                    & .scrollcontent {
+                    }
+                    & .sendBtn {
+                    }
+                }
+            }
         }
     }
 }
