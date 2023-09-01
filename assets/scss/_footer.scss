@@ -12,9 +12,15 @@
         & .address {
             font-size: 18px;
             font-family: 'Geometria';
+            & a {
+                transition: all ease-in-out 0.3s;
+                &:hover{
+                    opacity: 1 !important;
+                }
+            }
         }
         & .copyright {
-            font-size: 12px;
+            font-size: 14px;
             font-family: 'Geometria';
         }
     }
@@ -54,6 +60,59 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .footer{
+        & .innerfluid {
+            & .logo {
+                // height: 40px;
+                & img {
+                }
+            }
+            & .address {
+                font-size: 16px;
+            }
+            & .copyright {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .footer{
+        & .innerfluid {
+            & .logo {
+                height: 35px;
+                & img {
+                }
+            }
+            & .address {
+            }
+            & .copyright {
             }
         }
     }

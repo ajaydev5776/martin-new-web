@@ -102,14 +102,14 @@
         }
     }
 }
-.offcanvas-backdrop.fade.show{
-display: none;
-}
+// .offcanvas-backdrop.fade.show{
+// display: none;
+// }
 
 .menuoffcanvas {
     & .innerbodyPart {
-        // background-color: rgba($white , 0.7);
-        background-color: rgba($gray-500 , 0.2);
+        background-color: rgba($white , 0.7);
+        // background-color: rgba($gray-500 , 0.2);
         backdrop-filter: blur(50px);
         & .offcanvas-header {
             border-bottom: 1px solid rgba($white , 0.7);
